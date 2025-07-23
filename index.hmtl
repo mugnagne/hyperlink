@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LIZY's Hyperlink pattern</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    h1 {
+      background: linear-gradient(90deg, #FF3366, #FF5733);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    a {
+      color: #FF3366;
+      text-decoration: underline;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: #FF5733;
+    }
+
+    a:active {
+      color: #CC2C52;
+    }
+
+    .subtle-link {
+      color: #FFB3C6;
+      text-decoration: underline dotted;
+    }
+
+    .section {
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>LIZY's Hyperlink pattern</h1>
+
+  <div class="section">
+    <p>Here is a <a href="#link1">default link</a> on a white background.</p>
+    <p>Here is a <a href="#link2" class="subtle-link">secondary link / subtle</a> in a text block.</p>
+  </div>
+
+  <div class="section">
+    <p>Hover this <a href="#link3">link</a> to see its amazing orange shade 😎.</p>
+    <p>Maintain click on this <a href="#link4">active link</a> to see the red shade.</p>
+    <p>Once it's visited, <a href="#link5" onclick="this.style.color='#B02B4C'">the link becomes prune</a>.</p>
+  </div>
+
+</body>
+</html>
